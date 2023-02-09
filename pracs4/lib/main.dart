@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Floating demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -61,7 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter = 0;
     });
   }
-  void _question(){}
+
+  void _question() {}
 
   @override
   Widget build(BuildContext context) {
