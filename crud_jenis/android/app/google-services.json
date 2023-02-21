@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "11682018483",
+    "project_id": "crud-pracs9",
+    "storage_bucket": "crud-pracs9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11682018483:android:5c0773c5b130e2d7436cc6",
+        "android_client_info": {
+          "package_name": "com.example.crud_jenis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11682018483-2n61h6ab4f49qbhohh0hd7j3obtgs3jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3GJGnXIg1vgNxLu2jlvzM5tP7EmSb5bY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11682018483-2n61h6ab4f49qbhohh0hd7j3obtgs3jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
