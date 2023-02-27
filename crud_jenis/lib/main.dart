@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+
 // import 'package:firebase_auth/firebase_auth.dart';
 //Practical 8
 void main() async {
@@ -71,6 +73,18 @@ class _MyAppState extends State<MyApp> {
 
   readData() {
     print("Read");
+    CollectionReference colref =
+        FirebaseFirestore.instance.collection('MyStudents');
+
+    // colref.get()
+
+    DocumentReference documentReference =
+        FirebaseFirestore.instance.collection("MyStudents").doc('zB6ANxeOOoWIamI6qFAW');
+    documentReference.get().then((datasnapshot) {
+      if (kDebugMode) {
+        print(datasnapshot.data());
+      }
+    });
   }
 
   updateData() async {
@@ -99,9 +113,9 @@ class _MyAppState extends State<MyApp> {
     CollectionReference colref =
         FirebaseFirestore.instance.collection('MyStudents');
 
-    colref.doc('8KD1GRXfxFSRH3MoWnqu').delete().then((colref) => print("Document Deleted"),
-          onError: (e)=>print("Error deleting the document=$e")
-    );
+    colref.doc('8KD1GRXfxFSRH3MoWnqu').delete().then(
+        (colref) => print("Document Deleted"),
+        onError: (e) => print("Error deleting the document=$e"));
   }
 
   @override
