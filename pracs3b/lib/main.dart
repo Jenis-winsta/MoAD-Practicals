@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
+              children: const <Widget>[
                 Text("Just icons:\n\n\n\n\n"),
                 Icon(
                   Icons.travel_explore_rounded,
